@@ -30,9 +30,7 @@ public class Main {
 
         Collections.sort(copiaPedidos, ordernarPorValor);
 
-        for(Pedido p : copiaPedidos){
-            System.out.println(p.getCliente() + " - R$ " + p.getValor());
-        }
+        copiaPedidos.forEach(p -> System.out.println(p.getCliente() + " - R$ " + p.getValor()));
 
 
         System.out.println("-----------------------");
@@ -43,9 +41,7 @@ public class Main {
 
         Collections.sort(copiaPedidos,ordenarDecrescente);
 
-        for(Pedido p : copiaPedidos){
-            System.out.println(p.getCliente() + " - R$ " + p.getValor());
-        }
+        copiaPedidos.forEach(p -> System.out.println(p.getCliente() + " - R$ " + p.getValor()));
 
         System.out.println("-----------------------");
 
@@ -59,9 +55,7 @@ public class Main {
 
         Collections.sort(copiaPedidos, ordenarPorNome);
 
-        for(Pedido p : copiaPedidos){
-            System.out.println(p.getCliente() + " - R$ " + p.getValor());
-        }
+        copiaPedidos.forEach(p -> System.out.println(p.getCliente() + " - R$ " + p.getValor()));
 
         System.out.println("-----------------------");
 
@@ -86,8 +80,6 @@ public class Main {
 
         Collections.sort(copiaPedidos, criterio);
 
-        for(Pedido p : copiaPedidos){
-            System.out.println(p.getCliente() + " - R$ " + p.getValor());
-        }
+        copiaPedidos.forEach(p -> System.out.println(p.getCliente() + " - R$ " + p.getValor()));
     }
 }
